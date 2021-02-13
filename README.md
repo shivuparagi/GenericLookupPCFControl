@@ -7,3 +7,4 @@ Since PCF on lookup control is not yet supported, we are achieving this by creat
 
 ## Sample Screenshots
 ![alt text](src/GenericLookupPCF.gif)
+![alt text](src/FieldConfigurations.png)
