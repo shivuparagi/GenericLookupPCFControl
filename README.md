@@ -8,6 +8,6 @@ Since PCF on lookup control is not yet supported, we are achieving this by creat
 ## Sample Screenshots
 | Working Solution      | Configuration |
 | :---        |    :----:   |
-| <img src="src/RM.gif">   | <img src="src/FieldConfigurations.png" width="500" height="500">       |
+| <img src="src/RM.gif">   | <img src="src/FieldConfigurations.png">       |
 
 
