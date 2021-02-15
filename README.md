@@ -11,9 +11,4 @@ Since PCF on lookup control is not yet supported, we are achieving this by creat
 | <img src="src/RM.gif">   | <img src="src/FieldConfigurations.png">       |
 
 ## Sample Config
-
-## Config Details
-| Attribute      | Possible Values  | Remarks          |
-| :---           |    :----:        |    :----:        |
-| name           | Actual Lookup Field Name                 |                  |
-
+<img src="src/config.png">
