@@ -11,4 +11,11 @@ Since PCF on lookup control is not yet supported, we are achieving this by creat
 | <img src="src/RM.gif">   | <img src="src/FieldConfigurations.png">       |
 
 ## Sample Config
+
+Find sample config files under [managed](/GenericLookupPCFComponent/sampledata). 
+
+Note: 
+1. As of now, the configuration needs provided as part of property **ConfigJSON**
+2. You can also call external apis and apply your business logic and return valid resultset. Attaching such sample config for your refference for (**PrimanySponson.json** and web resrouce **LookupExternalAPI.js**) 
+
 <img src="src/config.png">
