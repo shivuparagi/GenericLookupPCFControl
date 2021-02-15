@@ -1,0 +1,49 @@
+{
+  "name": "contactid",
+  "openSearchPanelOnKeyDown": false,
+  "recordsThreshHoldLimit": 5000,
+  "newRecordText": "Create New Contact",
+  "entitySymbol": "Contact",
+  "focusControl": "focusControl2",
+  "exterCall": {
+    "webResource": "new__LookupExternalAPI"
+  },
+  "lookUpCol": {
+    "entity": "contact",
+    "schemaName": "ContactId",
+    "pageUrl": "",
+    "primaryKey": "contactid",
+    "primaryFeild": "name",
+
+    "fitlerTextFields": [
+      {
+        "name": "name",
+        "displayText": "Name"
+      },
+      {
+        "name": "email",
+        "displayText": "Email"
+      }
+    ],
+    "fieldsToShow": [
+      {
+        "name": "name",
+        "displayText": "Name"
+      },
+      {
+        "name": "email",
+        "displayText": "Email"
+      },
+      {
+        "name": "phone",
+        "displayText": "Phone"
+      }
+    ],
+    "views": [
+      {
+        "id": 0,
+        "name": "All Contacts"
+      }
+    ]
+  }
+}

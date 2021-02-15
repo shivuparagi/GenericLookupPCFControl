@@ -1,0 +1,49 @@
+{
+  "name": "transactioncurrencyid", // Name of the actual lookup field
+  "openSearchPanelOnKeyDown": true, // true: search will be done as and when user types. false: search will be done when user clicks search icon.
+  "recordsThreshHoldLimit": 5000, // Number of records to be fetched upon search
+  "newRecordText": "Create New Currency", // Text to be shown for Create Record
+  "focusControl": "focusControl1", // Focus control (in case of more number of Lookup fields on same form, do increament the number)
+  "entitySymbol": "TransactionCurrency", // Symbol of the entity
+  "lookUpCol": {
+    "entity": "transactioncurrency", // Name of the actual lookup field
+    "schemaName": "transactioncurrencyid", // Schema name of the actual lookup field
+    "pageUrl": "", // Relative URL of the lookup field entity form
+    "primaryKey": "transactioncurrencyid", // Primary Key of the looked up entity
+    "primaryFeild": "currencyname", // Primay Key Name
+    // Fields by which filter needs be performed (OR condition)
+    "fitlerTextFields": [
+      {
+        "name": "currencyname",
+        "displayText": "Currency Name"
+      }
+    ],
+    // Fields to show in results set
+    "fieldsToShow": [
+      {
+        "name": "currencyname",
+        "displayText": "Currency Name"
+      },
+      {
+        "name": "isocurrencycode",
+        "displayText": "Currency Code"
+      },
+      {
+        "name": "currencysymbol",
+        "displayText": "Currency Symbol"
+      }
+    ],
+    // Views. First one be default. For fetchXML, have the required FETCHXML and add <MORECONDITIONS/> at the end of the filter which will be replaced dynamically
+    "views": [
+      {
+        "id": 0,
+        "name": "All Currencies"
+      },
+      {
+        "id": 1,
+        "name": "Active Currencies",
+        "fetchXML": "<?xml version='1.0'?><fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'><entity name='transactioncurrency'><attribute name='transactioncurrencyid'/><attribute name='currencyname'/><attribute name='isocurrencycode'/><attribute name='currencysymbol'/><attribute name='exchangerate'/><attribute name='currencyprecision'/><order attribute='currencyname' descending='false'/><filter type='and'><condition attribute='statecode' operator='eq' value='0'/><MORECONDITIONS/></filter></entity></fetch>"
+      }
+    ]
+  }
+}
