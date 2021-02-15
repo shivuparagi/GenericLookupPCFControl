@@ -8,7 +8,7 @@ Since PCF on lookup control is not yet supported, we are achieving this by creat
 ## Sample Screenshots
 | Working Solution      | Configuration |
 | :---        |    :----:   |
-| [![Generic Lookup PCF Control](Generic Lookup PCF Control)](https://youtu.be/FrKFTgZWkkk)   | <img src="src/FieldConfigurations.png">       |
+| [![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")   | <img src="src/FieldConfigurations.png">       |
 
 ## Sample Config
 
