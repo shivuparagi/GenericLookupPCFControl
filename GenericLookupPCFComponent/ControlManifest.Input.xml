@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="GenericLookupPCFNamespace" constructor="GenericLookupPCFComponent" version="0.0.80" display-name-key="GenericLookupPCFComponent" description-key="GenericLookupPCFComponent description" control-type="standard">
+    <property name="DummyLookupField" display-name-key="DummyLookupField" description-key="DummyLookupField" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="ConfigJSON" display-name-key="ConfigJSON" description-key="ConfigJSON" of-type="Multiple" usage="input" required="false" />
+    <property name="ConfigFileName" display-name-key="ConfigFileName" description-key="ConfigFileName" of-type="SingleLine.Text" usage="input" required="false" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="./../node_modules/react-tabulator/lib/css/semantic-ui/tabulator_semantic-ui.css" order="3" />
+      <css path="css/styles.css" order="2" />
+      <css path="css/flyout.css" order="2" />
+      <img path="src/link.png"  />
+      <img path="src/error.png"  />
+      <img path="src/warning.png"  />
+    </resources>
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+  </control>
+</manifest>

@@ -1,0 +1,457 @@
+.glAutocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+.glInput {
+  box-sizing: border-box;
+  border: 0px;
+}
+
+  .glInput[type=text] {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .glInput[type=submit] {
+      background-color: DodgerBlue;
+      color: #fff;
+      cursor: pointer;
+  }
+
+.glAutocomplete-items {
+  box-sizing: border-box;
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+  .glAutocomplete-items div {
+      cursor: pointer;
+      background-color: #fff;
+  }
+.glAutocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+.glFlyout{
+  width:100%;height:400px;box-sizing: border-box;
+}
+
+glUL {
+  font-style: normal;
+  font-variant: normal;
+  font-family: SegoeUI-Semibold, "Segoe UI Semibold", "Segoe UI Regular", "Segoe UI";
+  white-space: normal;
+  word-break: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  line-height: 1.5em;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-right: 0px;
+  width: fit-content;
+  list-style-type: none;
+  flex-wrap: wrap;
+  max-height: 37px;
+  min-height: 22px;
+  outline: none !important;
+  display: flex;
+  
+}
+.glLinkLiv{
+  /* background-color: #EFEFEF; */
+}
+.glLinkLiv:hover{
+  background-color: #D8D8D8;
+}
+.glLi {
+  font-style: normal;
+  font-variant: normal;
+  font-family: SegoeUI-Semibold, "Segoe UI Semibold", "Segoe UI Regular", "Segoe UI";
+  white-space: normal;
+  word-break: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  line-height: 1.5em;
+  list-style-type: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  max-width: 100%;
+  overflow: hidden;
+  height: 100%;
+  background-color: transparent;
+  margin-top: 0.285714rem;
+  margin-bottom: 0.285714rem;
+  flex: 0 0 auto;
+  /* margin-right: 0.285714rem; */
+  max-height: 28px;
+  outline: none !important;
+}
+  .glLi div {
+      font-style: normal;
+      font-variant: normal;
+      white-space: normal;
+      word-break: normal;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1.5em;
+      list-style-type: none;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      padding-right: 0px;
+      cursor: pointer;
+      font-family: "Segoe UI Regular", SegoeUI, "Segoe UI";
+      color: rgb(17, 96, 183);
+      outline: none !important;
+      display: flex;
+
+  }
+  
+      .glLi div div {
+          font-style: normal;
+          font-variant: normal;
+          white-space: normal;
+          word-break: normal;
+          font-weight: 600;
+          font-size: 1rem;
+          line-height: 1.5em;
+          list-style-type: none;
+          cursor: pointer;
+          font-family: "Segoe UI Regular", SegoeUI, "Segoe UI";
+          color: rgb(17, 96, 183);
+          border: 0;
+          margin: 0;
+          padding-left: 7px;
+          align-items: center;
+          justify-content: center;
+          flex: 0 0 auto;
+          padding-right: 0px;
+          outline: none !important;
+          display: flex;
+          
+      }
+          .glLi div div span {
+              font-style: normal;
+              font-variant: normal;
+              white-space: normal;
+              word-break: normal;
+              font-weight: 600;
+              list-style-type: none;
+              cursor: pointer;
+              border: 0;
+              margin: 0;
+              padding: 0;
+              font-size: 16px;
+              height: 16px;
+              color: inherit;
+              line-height: 100%;
+              outline: none !important;
+              font-family: 'Dyn CRM Symbol';
+          }
+          .glLi div div :hover{
+            
+            background-color: #D8D8D8;
+        }
+
+.glText {
+  font-style: normal;
+  font-variant: normal;
+  word-break: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  list-style-type: none;
+  color: rgb(17, 96, 183);
+  border: 0;
+  margin: 0;
+  padding-right: 3px;
+  overflow: hidden;
+  white-space: nowrap;
+  align-items: center;
+  display: block;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  font-family: SegoeUI-Semibold, "Segoe UI Semibold", "Segoe UI Regular", "Segoe UI";
+  flex: 1 1 auto;
+  line-height: 2rem;
+  outline: none !important;
+}
+
+.glLinkIcon {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url("../src/link.png") no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+}
+.glDisplayFlex
+{
+  display: flex;
+}
+.gl_button:hover {
+  /* background-color: #e2e2e2 !important; */
+}
+
+.gl_button:focus {
+  border: 1px dotted rgb(51, 51, 51) !important;
+}
+.gl_button_new{
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-collapse: collapse;
+  border-spacing: 0;
+  list-style-type: none;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "SegoeUI", "Segoe UI";
+  -webkit-appearance: button;
+  overflow: visible;
+  border-radius: inherit;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border-width: 0px;
+  line-height: 1rem;
+  outline: none !important;
+  display: flex;
+}
+
+.gl_button {
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-collapse: collapse;
+  border-spacing: 0;
+  list-style-type: none;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "SegoeUI", "Segoe UI";
+  -webkit-appearance: button;
+  overflow: visible;
+  border-radius: inherit;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border-width: 0px;
+  line-height: 1rem;
+  outline: none !important;
+  display: none;
+}
+.gl_button_close{
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-collapse: collapse;
+  border-spacing: 0;
+  list-style-type: none;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "SegoeUI", "Segoe UI";
+  -webkit-appearance: button;
+  overflow: visible;
+  border-radius: inherit;
+  align-items: center;
+  cursor: pointer;
+  background-color: #EFEFEF;
+  border-width: 0px;
+  line-height: 1rem;
+  outline: none !important;
+  display: none;
+}
+.gl_button_close:hover{
+  background-color: #D8D8D8;
+}
+.gl_span {
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-collapse: collapse;
+  border-spacing: 0;
+  list-style-type: none;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "SegoeUI", "Segoe UI";
+  cursor: pointer;
+  line-height: 1rem;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  text-align: left;
+  outline: none !important;
+}
+.gl_span_span {
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-collapse: collapse;
+  border-spacing: 0;
+  list-style-type: none;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-family: "SegoeUI", "Segoe UI";
+  cursor: pointer;
+  text-align: left;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  color: rgb(51, 51, 51);
+  min-width: 16px;
+  /* margin-right: 5px; */
+  font-size: 1rem;
+  line-height: 1.5rem;
+  outline: none !important;
+}
+.gl_span_span_icon {
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-collapse: collapse;
+  border-spacing: 0;
+  list-style-type: none;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  cursor: pointer;
+  text-align: left;
+  font-size: 16px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  color: rgb(51, 51, 51);
+  width: 16px;
+  height: 16px;
+  line-height: 1.5rem;
+  outline: none !important;
+  font-family: "Dyn CRM Symbol";
+}
+.glDummyTextBox{
+  width: 0px;
+    height: 0px;
+    border: 0px;
+    /* background-color: #fff4ce; */
+}
+.glTable{
+  border: 1px solid rgb(216, 216, 216);
+  border-collapse: collapse;
+}
+.glHeader{
+  border-bottom: 1px solid rgb(216, 216, 216);
+  
+}
+.glFooter{
+  border-top: 1px solid rgb(216, 216, 216);
+  
+}
+.glFooter td{
+  padding: 10px;
+}
+.glViewSelectList{
+  border: 0px;
+  width: 200px;
+  word-break: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-family: 'SegoeUI', 'Segoe UI';
+  border-style: none;
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  background-color: white;
+}
+.glFont600{
+  font-weight: 600;
+
+}
+.glLink {
+  font-style: normal;
+  font-variant: normal;
+  word-break: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  list-style-type: none;
+  color: rgb(17, 96, 183);
+  border: 0;
+  margin-right: 5px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  align-items: center;
+  display: block;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  font-family: SegoeUI-Semibold, "Segoe UI Semibold", "Segoe UI Regular", "Segoe UI";
+  flex: 1 1 auto;
+  line-height: 2rem;
+  outline: none !important;
+  text-decoration: none;
+}
+.glDivMapped
+{
+  width: fit-content;
+  background-color: transparent;
+}
+.glDivMapped:hover
+{
+  width: fit-content;
+  background-color: #EFEFEF;
+}
+
+.glAutocomplete:hover .glDivMapped {
+  background-color: #EFEFEF;
+}
+.glAutocomplete:hover .glLinkLiv {
+  background-color: #EFEFEF;
+}
+
+.glAutocomplete:hover .gl_button_close {
+  display:flex;
+}
+.glAutocomplete:hover .gl_button {
+  display:flex;
+}
+.glNewFont{
+  font-size: 11px !important;
+}
+.glThead{
+  border: 1px solid #d4d4d4;
+  padding: 5px;
+  flex-wrap: wrap;
+  min-height: 32px;
+}
+
+.focusControl:hover{
+  background-color: aqua;
+}
+.tdSpinner{
+  top: 300px;
+  position: relative;
+  z-index: 1;
+}
+.tdGrid
+{
+  height: 600px;
+}

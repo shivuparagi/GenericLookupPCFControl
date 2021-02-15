@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "p8hrz/b3lvGR2s9ed3LWWCqDaQJVMmdb9AtXn3eO2QApEEscoRQY3+Ar2rk8pOXDlAM2+qTatAlC3bKZrBaa6Q==",
+  "success": true,
+  "projectFilePath": "C:\\Shiva\\GenericLookupPCF\\GenericLookupPCFSolution\\GenericLookupPCFSolution.cdsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sparagi\\.nuget\\packages\\microsoft.powerapps.msbuild.pcf\\1.4.4\\microsoft.powerapps.msbuild.pcf.1.4.4.nupkg.sha512",
+    "C:\\Users\\sparagi\\.nuget\\packages\\microsoft.powerapps.msbuild.solution\\1.4.4\\microsoft.powerapps.msbuild.solution.1.4.4.nupkg.sha512"
+  ],
+  "logs": []
+}
