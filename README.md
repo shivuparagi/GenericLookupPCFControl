@@ -12,7 +12,7 @@ Since PCF on lookup control is not yet supported, we are achieving this by creat
 
 ## Sample Config
 
-Find sample config files under [managed](/GenericLookupPCFComponent/sampledata). 
+Find sample config files under [Sample Configurations](/GenericLookupPCFComponent/sampledata). 
 
 Note: 
 1. As of now, the configuration needs provided as part of property **ConfigJSON**
