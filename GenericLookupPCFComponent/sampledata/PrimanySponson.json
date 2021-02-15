@@ -6,7 +6,7 @@
   "entitySymbol": "Contact",
   "focusControl": "focusControl2",
   "exterCall": {
-    "webResource": "new__LookupExternalAPI"
+    "webResource": "LookupExternalAPI"
   },
   "lookUpCol": {
     "entity": "contact",
