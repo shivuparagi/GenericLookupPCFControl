@@ -15,7 +15,7 @@ Since PCF on lookup control is not yet supported, we are achieving this by creat
 Find sample config files under [Sample Configurations](/GenericLookupPCFComponent/sampledata). 
 
 Note: 
-1. As of now, the configuration needs provided as part of property **ConfigJSON**
-2. You can also call external apis and apply your business logic and return valid resultset. Attaching such sample config for your refference for (**PrimanySponson.json** and web resrouce **LookupExternalAPI.js**) 
+1. As of now, the configuration needs to be provided as part of the property **ConfigJSON**
+2. You can also call external APIs and apply your business logic and return a valid result set. Attaching such sample config for your reference for (**PrimanySponson.json** and web resource **LookupExternalAPI.js**)
 
 <img src="src/config.png">
