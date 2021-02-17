@@ -19,3 +19,10 @@ Note:
 2. You can also call external APIs and apply your business logic and return a valid result set. Attaching such sample config for your reference for (**PrimanySponson.json** and web resource **LookupExternalAPI.js**)
 
 <img src="src/config.png">
+
+##Work Around the increase the Text Area Max Length of ConfigJSON
+
+1. Go to Developer Tools (F12 or Ctrl+Shift+J)
+2. Inspect the **ConfigJSON** textbox and increase the max length of text area as shown below
+
+<img src="src/WorkAroundToIncreaseSizeOfConfigTextArea.png">
