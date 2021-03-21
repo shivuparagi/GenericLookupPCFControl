@@ -1344,3 +1344,38 @@ Unmanaged Pack complete.
 2021-02-15 09:06:42.659 - Info	
 Managed Pack complete.
 
+2021-03-21 19:36:51.941 - Info	
+Packing C:\Shiva\GenericLookupPCF\GenericLookupPCFSolution\obj\Release\Metadata to bin\Release\GenericLookupPCFSolution.zip and bin\Release\GenericLookupPCFSolution_managed.zip
+
+2021-03-21 19:36:52.123 - Info	Processing Component: Entities
+2021-03-21 19:36:52.131 - Info	Processing Component: Roles
+2021-03-21 19:36:52.139 - Info	Processing Component: Workflows
+2021-03-21 19:36:52.139 - Info	Processing Component: FieldSecurityProfiles
+2021-03-21 19:36:52.139 - Info	Processing Component: Templates
+2021-03-21 19:36:52.149 - Info	Processing Component: EntityMaps
+2021-03-21 19:36:52.149 - Info	Processing Component: EntityRelationships
+2021-03-21 19:36:52.212 - Info	Processing Component: OrganizationSettings
+2021-03-21 19:36:52.213 - Info	Processing Component: optionsets
+2021-03-21 19:36:52.213 - Info	Processing Component: CustomControls
+2021-03-21 19:36:52.297 - Info	 - GenericLookupPCFNamespace.GenericLookupPCFComponent
+2021-03-21 19:36:53.595 - Info	Processing Component: SolutionPluginAssemblies
+2021-03-21 19:36:53.597 - Info	Processing Component: EntityDataProviders
+2021-03-21 19:36:53.817 - Info	
+Unmanaged Pack complete.
+
+2021-03-21 19:36:53.818 - Info	Processing Component: Entities
+2021-03-21 19:36:53.819 - Info	Processing Component: Roles
+2021-03-21 19:36:53.819 - Info	Processing Component: Workflows
+2021-03-21 19:36:53.819 - Info	Processing Component: FieldSecurityProfiles
+2021-03-21 19:36:53.819 - Info	Processing Component: Templates
+2021-03-21 19:36:53.819 - Info	Processing Component: EntityMaps
+2021-03-21 19:36:53.820 - Info	Processing Component: EntityRelationships
+2021-03-21 19:36:53.820 - Info	Processing Component: OrganizationSettings
+2021-03-21 19:36:53.820 - Info	Processing Component: optionsets
+2021-03-21 19:36:53.820 - Info	Processing Component: CustomControls
+2021-03-21 19:36:53.822 - Info	 - GenericLookupPCFNamespace.GenericLookupPCFComponent
+2021-03-21 19:36:53.847 - Info	Processing Component: SolutionPluginAssemblies
+2021-03-21 19:36:53.847 - Info	Processing Component: EntityDataProviders
+2021-03-21 19:36:54.206 - Info	
+Managed Pack complete.
+

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="GenericLookupPCFNamespace" constructor="GenericLookupPCFComponent" version="0.0.80" display-name-key="GenericLookupPCFComponent" description-key="GenericLookupPCFComponent description" control-type="standard">
+  <control namespace="GenericLookupPCFNamespace" constructor="GenericLookupPCFComponent" version="0.0.81" display-name-key="GenericLookupPCFComponent" description-key="GenericLookupPCFComponent description" control-type="standard">
     <property name="DummyLookupField" display-name-key="DummyLookupField" description-key="DummyLookupField" of-type="SingleLine.Text" usage="bound" required="true" />
     <property name="ConfigJSON" display-name-key="ConfigJSON" description-key="ConfigJSON" of-type="Multiple" usage="input" required="false" />
     <property name="ConfigFileName" display-name-key="ConfigFileName" description-key="ConfigFileName" of-type="SingleLine.Text" usage="input" required="false" />

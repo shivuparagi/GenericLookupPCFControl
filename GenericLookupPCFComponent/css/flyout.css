@@ -398,7 +398,6 @@ glUL {
   margin-right: 5px;
   padding: 0;
   overflow: hidden;
-  white-space: nowrap;
   align-items: center;
   display: block;
   cursor: pointer;

@@ -158,31 +158,33 @@ class CalloutControlComponent extends React.Component<iPropsInput> {
   LoadInitialData = () => {
     let thisRef = this;
 
-    this._context.webAPI
-      .retrieveRecord(
-        this._entityTypeName,
-        this._entityId,
-        "?$select=_" + this._tmpField.name + "_value"
-      )
-      .then(
-        function success(result) {
-          let tmpLookupId = result["_" + thisRef._tmpField.name + "_value"];
-          let tmpLookupText =
-            result[
-              "_" +
-                thisRef._tmpField.name +
-                "_value@OData.Community.Display.V1.FormattedValue"
-            ];
+    if (this._entityId.length > 0) {
+      this._context.webAPI
+        .retrieveRecord(
+          this._entityTypeName,
+          this._entityId,
+          "?$select=_" + this._tmpField.name + "_value"
+        )
+        .then(
+          function success(result) {
+            let tmpLookupId = result["_" + thisRef._tmpField.name + "_value"];
+            let tmpLookupText =
+              result[
+                "_" +
+                  thisRef._tmpField.name +
+                  "_value@OData.Community.Display.V1.FormattedValue"
+              ];
 
-          thisRef.setState({
-            lookupId: tmpLookupId,
-            lookupText: tmpLookupText,
-          });
-        },
-        function (error) {
-          console.log(error.message);
-        }
-      );
+            thisRef.setState({
+              lookupId: tmpLookupId,
+              lookupText: tmpLookupText,
+            });
+          },
+          function (error) {
+            console.log(error.message);
+          }
+        );
+    }
     this.LoadData(0);
   };
   /* istanbul ignore next */
@@ -534,6 +536,13 @@ class CalloutControlComponent extends React.Component<iPropsInput> {
         }
       );
   };
+  OnTextClick = (e: any) => {
+    e.preventDefault();
+    if (this._tmpField.lookUpCol?.pageUrl) {
+      let tmpLink = this._tmpField.lookUpCol?.pageUrl + this._entityId;
+      window.open(tmpLink, "_self");
+    }
+  };
 
   public render() {
     const options = {
@@ -589,6 +598,10 @@ class CalloutControlComponent extends React.Component<iPropsInput> {
                                             className="glLink"
                                             id={this._linkLookupText}
                                             href="#"
+                                            title={this.state.lookupText}
+                                            onClick={(e) => {
+                                              this.OnTextClick(e);
+                                            }}
                                           >
                                             {this.state.lookupText}
                                           </a>
@@ -739,23 +752,25 @@ class CalloutControlComponent extends React.Component<iPropsInput> {
 
                                       <tr className="glFooter">
                                         <td align="left">
-                                          <button
-                                            id="btnSearch"
-                                            className="gl_button_new"
-                                            onClick={() => {
-                                              this.OnNewClick();
-                                            }}
-                                          >
-                                            <span className="gl_span">
-                                              <span className="gl_span_span">
-                                                <span className="glNewFont glFont600 gl_span_span_icon symbolFont New-symbol"></span>
+                                          {this._tmpField.newRecordText && (
+                                            <button
+                                              id="btnSearch"
+                                              className="gl_button_new"
+                                              onClick={() => {
+                                                this.OnNewClick();
+                                              }}
+                                            >
+                                              <span className="gl_span">
+                                                <span className="gl_span_span">
+                                                  <span className="glNewFont glFont600 gl_span_span_icon symbolFont New-symbol"></span>
+                                                </span>
+                                                <span className="glFont600 editable_grid_actions_span_span_label">
+                                                  {this._tmpField
+                                                    .newRecordText ?? "New"}
+                                                </span>
                                               </span>
-                                              <span className="glFont600 editable_grid_actions_span_span_label">
-                                                {this._tmpField.newRecordText ??
-                                                  "New"}
-                                              </span>
-                                            </span>
-                                          </button>
+                                            </button>
+                                          )}
                                         </td>
                                         <td align="right">
                                           <select
