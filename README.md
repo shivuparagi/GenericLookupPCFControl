@@ -18,6 +18,7 @@ Note:
 1. As of now, the configuration needs to be provided as part of the property **ConfigJSON**
 2. You can also call external APIs and apply your business logic and return a valid result set. Attaching such sample config for your reference for (**PrimanySponson.json** and web resource **LookupExternalAPI.js**)
 3. "fetchXml" is case sensitive. Keep it as "fetchXml" only.
+4. Remove all comments from config json. Very important.
 
 <img src="src/config.png">
 
