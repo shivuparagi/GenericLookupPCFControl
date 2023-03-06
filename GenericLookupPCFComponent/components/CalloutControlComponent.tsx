@@ -333,7 +333,7 @@ class CalloutControlComponent extends React.Component<iPropsInput> {
       }
       fetchXml = fetchXml.replace("<MORECONDITIONS/>", tmpConditions);
       fetchXml = "?fetchXml=" + encodeURIComponent(fetchXml);
-      this._context.webAPI.retrieveMultipleRecords("account", fetchXml).then(
+      this._context.webAPI.retrieveMultipleRecords(this._tmpField.lookUpCol?.entity??"", fetchXml).then(
         function success(result) {
           thisref.PopulateData(result);
         },
