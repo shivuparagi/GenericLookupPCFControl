@@ -42,7 +42,7 @@
       {
         "id": 1,
         "name": "Active Currencies",
-        "fetchXML": "<?xml version='1.0'?><fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'><entity name='transactioncurrency'><attribute name='transactioncurrencyid'/><attribute name='currencyname'/><attribute name='isocurrencycode'/><attribute name='currencysymbol'/><attribute name='exchangerate'/><attribute name='currencyprecision'/><order attribute='currencyname' descending='false'/><filter type='and'><condition attribute='statecode' operator='eq' value='0'/><MORECONDITIONS/></filter></entity></fetch>"
+        "fetchXml": "<?xml version='1.0'?><fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'><entity name='transactioncurrency'><attribute name='transactioncurrencyid'/><attribute name='currencyname'/><attribute name='isocurrencycode'/><attribute name='currencysymbol'/><attribute name='exchangerate'/><attribute name='currencyprecision'/><order attribute='currencyname' descending='false'/><filter type='and'><condition attribute='statecode' operator='eq' value='0'/><MORECONDITIONS/></filter></entity></fetch>"
       }
     ]
   }
